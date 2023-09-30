@@ -1,0 +1,144 @@
+Nome: Thiago Queiroz da Silva
+
+EXERCICIO 01:
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	double media1, media2, media3, resultado;
+	cout<<"Informe nota 01: ";
+	cin>>media1;
+	cout<<"Informe nota 02: ";
+	cin>>media2;
+	cout<<"Informe nota 03: ";
+	cin>>media3;
+	resultado = (media1 + media2 + media3)/3;
+	if (resultado >= 6)
+	cout << "Parabens voce APROVADO" << endl;
+	
+	else
+	cout << "Infelizmente voce foi reprovado" << endl;
+	
+	return 0;
+	
+}
+
+
+
+EXERCICIO 02:
+#include<iostream>
+
+using namespace std;
+
+int main ()
+
+{ int x;
+
+cout<<"Digite um numero: "; cin>>x;
+
+if(x>0)
+{
+cout<< x <<" e positivo";
+}
+else if(x<0)
+{
+cout<< x <<" e negativo";
+}
+else
+{
+cout<< x <<" e nulo";
+}
+
+return 0;
+}
+
+
+
+EXERCICIO 3:
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	double b, a, resultado;
+	cout<<"Informe o valor A: ";
+	cin>>a;
+	cout<<"Informe o valor B: ";
+	cin>>b;
+	
+	cout<< "O primeiro numero " << a << " e o segundo numero " << b;
+	
+	if (a > b)
+	cout << " \nA maior que B" << endl;
+	
+	else
+	cout << " \nB maior que A" << endl;
+	
+	return 0;
+	
+}
+
+
+EXERCICIO 4:
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	double a, b, c, area, volume;
+	cout<<"Informe os valores em cm\n\n";
+	cout<<"A = Altura\n";
+	cout<<"B = Largura\n";
+	cout<<"C = Profundidade\n\n";
+	cout<<"Informe o valor A: ";
+	cin>>a;
+	cout<<"Informe o valor B: ";
+	cin>>b;
+	cout<<"Informe o valor C: ";
+	cin>>c;
+	
+	volume = (a*b*c);
+	area = (2*a*b + 2*a*c + 2*b*c);
+	
+	cout << "\nO volume: " << volume << "; e a area: " << area << endl; 
+	
+	if (volume > 20)
+	cout << " \nO volume e superior 20cm² " << endl;
+	
+	else
+	cout << " \nO volume e inferior 20cm² " << endl;
+	
+	return 0;
+	
+}
+
+
+EXERCICIO 5:
+#include <iostream>
+
+using namespace std;
+
+int main (void)
+{
+	int opc;
+	cout<<"Um valor de 1 a 4\n";
+	cout<<"Escolha o valor que voce quer: ";
+	cin>>opc;
+	switch (opc)
+	{
+		case 1: cout<< "SAQUE\n";
+		break;
+		case 2: cout<< "EXTRATO\n";
+		break;
+		case 3: cout<< "EXTRATO\n";
+		break;
+		case 4: cout<< "DEPOSITO\n";
+		break;
+		default: cout<<"INVALIDO";
+	}
+	return 0;
+	}

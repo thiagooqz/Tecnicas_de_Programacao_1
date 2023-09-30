@@ -1,0 +1,27 @@
+﻿###########
+Programa 1
+###########  
+
+#include <iostream>
+using namespace std;
+int main(){
+	printf("\nBem Vindos alunos da turma de Tecnicas de Programacao 1\n");
+	return 0;
+}
+
+###########
+Programa 2
+############
+
+#include <iostream>
+using namespace std;
+int main(){
+	
+	float media;
+  
+  printf("Calculo da media final de um aluno que obteve: \nNota1=10; \nNota2=80 \nNota3=60:\n ");
+  media = (10 + 80 + 60) / 3;
+  
+  printf("\nMedia do aluno = %.1f\n",media);
+	return 0;
+}

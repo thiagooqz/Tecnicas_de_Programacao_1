@@ -1,0 +1,256 @@
+Exercicio 01:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int soma, variavel_soma = 1, num;
+  cout<<"O valor é: ";
+  cin>>num;
+  while(variavel_soma <= 10)
+      {
+        soma = num + variavel_soma;
+        cout << soma << " ";
+        variavel_soma++;
+      }
+      
+      cout << "\nX depois de sair do repetir: " << soma;
+      
+return 0;
+}
+
+
+Exercicio 02:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int i;
+  int Altura[5];
+  cout<<"ALTURA DOS ESTUDANTES\n";
+  for (i = 0; i<5; i=i+1)
+  {
+      cout<<"Entre com a altura: ";
+      cin>>Altura[i];
+  }
+  cout<<"A altura: ";
+  for (i=0; i<5; i=i+1)
+  {
+      cout<< Altura[i] << "\t";
+  }
+  cout<< "\n";
+  return 0;
+}
+
+
+Exercicio 03:
+Item A)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    float A[5];
+    float B[5];
+    float C[5];
+    
+    cout << "Preencher Vetor A. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> A[i];
+    }
+    cout << "Preencher Vetor B. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> B[i];
+    }
+    for (i=0; i<5; i=i+1)
+    {
+        C[i]=A[i]+B[i];
+    }
+    cout << "Mostrar o Vetor C: ";
+    for (i=0; i<5; i=i+1)
+    {
+        cout << C[i] << "\t";
+    }
+    cout <<"\n";
+
+    return 0;
+}
+
+
+ITEM b)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    float A[5];
+    float B[5];
+    float C[5];
+    
+    cout << "Preencher Vetor A. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> A[i];
+    }
+    cout << "Preencher Vetor B. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> B[i];
+    }
+    for (i=0; i<5; i=i+1)
+    {
+        C[i]=A[i]-B[i];
+    }
+    cout << "Mostrar o Vetor C: ";
+    for (i=0; i<5; i=i+1)
+    {
+        cout << C[i] << "\t";
+    }
+    cout <<"\n";
+
+    return 0;
+}
+
+
+
+ITEM c)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    float A[5];
+    float B[5];
+    float C[5];
+    
+    cout << "Preencher Vetor A. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> A[i];
+    }
+    cout << "Preencher Vetor B. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> B[i];
+    }
+    for (i=0; i<5; i=i+1)
+    {
+        C[i]=A[i]*B[i];
+    }
+    cout << "Mostrar o Vetor C: ";
+    for (i=0; i<5; i=i+1)
+    {
+        cout << C[i] << "\t";
+    }
+    cout <<"\n";
+
+    return 0;
+}
+
+
+ITEM D)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    float A[5];
+    float B[5];
+    float C[5];
+    
+    cout << "Preencher Vetor A. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> A[i];
+    }
+    cout << "Preencher Vetor B. \n";
+    for  (i=0; i<5; i=i+1)
+    {
+     cout << "Entre com um valor: ";
+     cin >> B[i];
+    }
+    for (i=0; i<5; i=i+1)
+    {
+        C[i]=A[i]/B[i];
+    }
+    cout << "Mostrar o Vetor C: ";
+    for (i=0; i<5; i=i+1)
+    {
+        cout << C[i] << "\t";
+    }
+    cout <<"\n";
+
+    return 0;
+}
+
+
+EXERCICIO 4:
+#include <iostream>
+#include <math.h>
+using namespace std;
+//vairáveis globais
+float dados[5] = {185, 201, 188, 195, 176};
+int n=5;
+//função principal
+int main()
+{
+//calculando a soma dos elementos de um vetor
+float soma=0.0;
+for(int i=0; i<=4; i++)
+soma+=dados[i]; //soma=soma+dados[i]
+//calculando a soma de quadrados do vetor
+float somaquad=0.0;
+for(int i=0; i <=4; i++)
+somaquad+=dados[i]*dados[i];
+//calculando a média aretimética do vetor
+float media=0.0;
+for(int i=0; i<=4; i++)
+media+=dados[i]; // media = media + dados[i]
+media/=5; // media = media/10
+// calculando a variancia amostral dos dados
+float variancia;
+variancia=(somaquad - soma*soma/5)/(5-1);
+//calculando o desvio padrao amostral dos dados
+float desvpad;
+desvpad=sqrt(variancia);
+//encontrando o menor valor dos dados
+float minimo=dados[1];
+for(int i =0; i <=n-1; i++)
+if(minimo>dados[i]) minimo = dados[i];
+//encontrando o maior valor dos dados
+float maximo=dados[1];
+for(int i =0; i <=n-1; i++)
+if(maximo<dados[i]) maximo = dados[i];
+//função que calcula o coeficiente de variação
+float cv;
+cv=50*desvpad/media;
+cout << "Soma : " << soma<< endl;
+cout << "Soma de Quadrados : " << somaquad << endl;
+cout << "Media : " << media << endl;
+cout << "Variancia Amostral: " << variancia << endl;
+cout << "Desvio Padrao : " << desvpad << endl;
+cout << "Minimo : " << minimo << endl;
+cout << "Maximo : " << maximo << endl;
+cout << "CV : " << cv << endl;
+
+return 0;
+}

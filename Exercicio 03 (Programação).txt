@@ -1,0 +1,112 @@
+Nome: Thiago Queiroz da Silva
+
+Elabore um programa em C++ que calcule quanto cada funcionário ganhou de
+hora extra e quanto receberá no final do Mês de Maio sabendo que:
+a) Catarina trabalhou 50h/semanais
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+float Catarina, horaextra, salarioporhora, vencimento, salarioextra; 
+const int hora = 44;
+
+int main()
+{
+	salarioporhora = 50;
+	Catarina = 50;
+	
+	horaextra = Catarina - hora;
+	salarioextra = (horaextra*salarioporhora)*1.5;
+	vencimento = (hora*salarioporhora) + (salarioextra);
+	
+	cout <<"Recebera no final do mes: " << vencimento<< endl;
+	cout << "Ganhou de hora extra: " << salarioextra<< endl;
+	
+	return 0;
+	
+}
+
+
+b) Fernando trabalhou 55 h/semanais
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+float Fernando, horaextra, salarioporhora, vencimento, salarioextra; 
+const int hora = 44;
+
+int main()
+{
+	salarioporhora = 50;
+	Fernando = 55;
+	
+	horaextra = Fernando - hora;
+	salarioextra = (horaextra*salarioporhora)*1.5;
+	vencimento = (hora*salarioporhora) + (salarioextra);
+	
+	cout <<"Recebera no final do mes: " << vencimento<< endl;
+	cout << "Ganhou de hora extra: " << salarioextra<< endl;
+	
+	return 0;
+	
+}
+
+
+
+c) Cristina trabalhou 44 h/semanais
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+float Cristina, horaextra, salarioporhora, vencimento, salarioextra; 
+const int hora = 44;
+
+int main()
+{
+	salarioporhora = 50;
+	Cristina = 44;
+	
+	horaextra = Cristina - hora;
+	salarioextra = (horaextra*salarioporhora)*1.5;
+	vencimento = (hora*salarioporhora) + (salarioextra);
+	
+	cout <<"Recebera no final do mes: " << vencimento<< endl;
+	cout << "Ganhou de hora extra: " << salarioextra<< endl;
+	
+	return 0;
+	
+}
+
+
+
+d) Felipe trabalhou 20h/semanais
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+float Felipe, horaextra, salarioporhora, vencimento, salarioextra; 
+const int hora = 44;
+
+int main()
+{
+	salarioporhora = 50;
+	Felipe = 20;
+	
+	horaextra = Felipe - hora;
+	salarioextra = (horaextra*salarioporhora)*1.5;
+	vencimento = (hora*salarioporhora) + (salarioextra);
+	
+	cout <<"Recebera no final do mes: " << vencimento<< endl;
+	cout << "Ganhou de hora extra: " << salarioextra<< endl;
+	
+	return 0;
+	
+}

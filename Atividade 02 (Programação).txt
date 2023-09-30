@@ -1,0 +1,115 @@
+Nome: Thiago Queiroz da Silva
+
+Programa 01:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float n1, n2, soma;
+	cout<< "Digite o valor 1: ";
+	cin>> n1; 
+	cout<< "Digite o valor 2: ";
+	cin>> n2; 
+	
+	soma = n1 + n2;
+	
+	cout << soma << endl;
+	
+	return 0; 
+	
+}
+
+Programa 02:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float n1, n2, resultado;
+	cout<< "Digite o valor 1: ";
+	cin>> n1; 
+	cout<< "Digite o valor 2: ";
+	cin>> n2; 
+	
+	resultado = n1 * (n2*n2);
+	
+	cout << resultado << endl;
+	
+	return 0; 
+	
+}
+
+Programa 03: 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float n1, resultado;
+	cout<< "Digite o valor 1: ";
+	cin>> n1;  
+	
+	resultado = n1 * n1;
+	
+	cout << resultado << endl;
+	
+	return 0; 
+	
+}
+
+Programa 04:
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main()
+{
+	double n1, n2, r;
+	cout<< "Digite o valor 1: ";
+	cin>> n1; 
+	cout<< "Digite o valor 2: ";
+	cin>> n2; 
+	
+	r = sqrt((n1 * n1) + (n2 * n2));
+	
+	cout << r << endl;
+	
+	return 0; 
+	
+}
+
+Programa 05:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	bool t1, t2;
+	t1 = (10>5); //Verdadeiro
+	t2 = (false || 3>25/3); //falso
+	cout << t1 << endl;
+	cout << t2 << endl;
+	
+	return 0; 
+	
+}
+
+
+Programa 06:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float b, h, a;
+	b = 4;
+	h = 5.5;
+	a = b * h; 
+	
+	cout << "A area desse triangulo eh: " << a << endl;
+	
+	return 0; 
+	
+}

@@ -1,0 +1,54 @@
+EXERCICIO:
+
+Soma:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int i, j, mat1[3][3] = {11,12,13,14,15,16,17,18,19}, mat2[3][3] = {1,2,3,4,5,6,7,8,9}, mat3[3][3];
+
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            mat3[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++)
+            cout << mat3[i][j] << "\t";
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+
+Multiplicação:
+#include <iostream>
+
+using namespace std;
+
+void Multiplicacao() {
+    int aMatriz[3][2] = {{1, 4}, {2, 5}, {3, 6}};
+    int bMatriz[2][3] = {{7, 8, 9}, {10, 11, 12}};
+    int produto[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            
+            for (int k = 0; k < 2; k++) {
+                produto[i][j] += aMatriz[i][k] * bMatriz[k][j];
+            }
+            cout << produto[i][j] << "  ";
+        }
+        cout << "\n";
+    }
+}
+
+int main() {
+    Multiplicacao();
+    return 0;
+}

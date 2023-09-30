@@ -1,0 +1,92 @@
+Nome: Thiago Queiroz da Silva
+
+EXERCICIO 01:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    cout << "Digite o valor a: ";
+    cin >> a;
+    cout << "Digite o valor de b: ";
+    cin >> b;
+    
+    if (a<10 && b<10)
+    for(int c=a; c<=b; c++)
+    {
+        cout << c << endl;
+    }
+    else
+       cout << "Invalido" << endl;
+    
+    return 0;
+}
+
+
+EXERCICIO 02:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double t, fat;
+    cout << "Digite o numero inicial: ";
+    cin >> t;
+    for (fat=1; t > 1; t = t -1)
+    fat = fat * t;
+        cout << fat;
+    return 0;
+}
+
+
+EXERCICIO 03:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    for (i=100; i >= 0; i = i-20)
+        cout << i << " ";
+    return 0;
+}
+
+
+EXERCICIO 04:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    for (int i=10; i > 0; i--)
+        cout << "\n" << i << "x7= " << (i*7);
+        cout << endl;
+    return 0;
+}
+
+
+EXERCICIO 05:
+#include <iostream>
+
+using namespace std;
+
+int main(void)
+{
+	float s = 622, a = 0.08;
+	int i, aI = 2012, aF = 2022;
+	
+	for (i = aI + 1; i < aF; i++) {
+		s = s + (s * a);
+		cout << "\n Salario em " << i << ": " << s << " - aumento de " << a << " ";
+	}
+	
+	cout << "\n Salario final: " << s;
+	
+	return 0;
+}

@@ -1,0 +1,64 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+	int jogador,computador;
+//lógica do jogador
+	cout<<"____________JoKenPo____________\n\n";
+	cout<<"1 - PEDRA\n";
+	cout<<"2 - PAPEL\n";
+	cout<<"3. TESOURA\n";
+	cout<<"Digite a opcao desejada: ";
+	cin>>jogador;
+	cout<<"\n________________________\n\n";
+	switch(jogador)
+	{
+	    
+        case 1: cout<<"Jogador escolheu: PEDRA\n";
+		break;
+
+		case 2: cout<<"Jogador escolheu: PAPEL\n";
+		break;
+
+		case 3: cout<<"Jogador escolheu: TESOURA\n";
+		break;
+
+		default:
+			cout<<"Opcao invalida\n";
+	}
+	// lógica do computador
+	srand(time(NULL));
+	computador=("%d",rand()%3 + 1);
+	switch(computador)
+	{
+		case 1: cout<<"Computador escolheu: PEDRA\n";
+		break;
+
+		case 2: cout<<"Computador escolheu: PAPEL\n";
+		break;
+
+		case 3: cout<<"Computador escolheu: TESOURA\n";
+		break;		
+	}
+	//lógica para determinar o vencedor
+	if(jogador==computador)
+	{
+		cout<<"EMPATE\n";
+	}
+	else if ((jogador==1 && computador==3) || (jogador==2 && computador==1) ||
+	(jogador==3 && computador==2))
+	{
+		cout<<"JOGADOR VENCEU\n";
+	}
+	else
+	{
+		cout<<"COMPUTADOR VENCEU\n";
+	}
+	cout<<"_______________________________\n";
+	return 0;
+}
